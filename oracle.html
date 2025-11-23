@@ -3,88 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Core Oracle Developer Skills</title>
+    <title>Oracle Developer Skills</title>
     <style>
         body {
+            background-color: #d9f0ff; /* Light blue background */
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 20px;
         }
+
+        h1 {
+            color: #1a73e8; /* Blue title */
+            text-align: center;
+            text-shadow: 1px 1px 2px #888888;
+        }
+
         h2 {
-            color: #2F4F4F;
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 5px;
+            color: #ff5733; /* Orange-red subtitle */
+            margin-top: 20px;
         }
+
         ul {
-            margin-bottom: 20px;
+            list-style-type: square;
+            margin-left: 40px;
         }
-        li {
-            margin: 5px 0;
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            background-color: #1a73e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            box-shadow: 2px 2px 5px #888888;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .back-button:hover {
+            background-color: #155ab6;
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
 
-    <h2>Core Oracle Developer Skills</h2>
+    <a href="javascript:history.back()" class="back-button">⬅ Back</a>
+
+    <h1>Core Oracle Developer Skills</h1>
+
+    <h2>SQL & Database Skills</h2>
     <ul>
         <li>Strong Oracle SQL coding (SELECT, JOINs, subqueries, analytic functions)</li>
         <li>Advanced PL/SQL programming</li>
         <li>Writing stored procedures, functions, and triggers</li>
         <li>Creating and maintaining PL/SQL packages</li>
         <li>Exception handling & error management</li>
-        <li>Performance tuning for SQL and PL/SQL code</li>
-        <li>Working with cursors (implicit & explicit)</li>
-        <li>Bulk processing (BULK COLLECT, FORALL)</li>
-        <li>Dynamic SQL (EXECUTE IMMEDIATE)</li>
-        <li>Working with collections (nested tables, VARRAYs)</li>
-        <li>Using Oracle sequences, synonyms, and views</li>
-        <li>Working with constraints and indexes</li>
+        <li>Performance tuning for SQL & PL/SQL</li>
     </ul>
 
-    <h2>Database Design & Data Modeling</h2>
+    <h2>Additional Skills</h2>
     <ul>
-        <li>Database schema design (tables, relationships, keys)</li>
-        <li>ERD creation & normalization</li>
-        <li>Working with partitions, materialized views, and indexing strategies</li>
-        <li>Designing efficient data structures for large datasets</li>
-    </ul>
-
-    <h2>Oracle Tools & Environments</h2>
-    <ul>
-        <li>Oracle SQL Developer</li>
-        <li>Oracle SQL*Plus</li>
-        <li>Oracle Application Express (APEX) development</li>
-        <li>Oracle Forms & Reports (if applicable)</li>
-        <li>Oracle Enterprise Manager for monitoring</li>
-        <li>Git version control (for SQL/PL-SQL scripts)</li>
-    </ul>
-
-    <h2>ETL / Data Integration Skills</h2>
-    <ul>
-        <li>Oracle Data Pump (expdp/impdp)</li>
-        <li>Writing ETL logic in PL/SQL</li>
-        <li>Data transformation, cleansing, and loading</li>
-        <li>Working with external tables</li>
-        <li>Using DBMS_SCHEDULER / DBMS_JOB for automation</li>
-    </ul>
-
-    <h2>Performance & Optimization</h2>
-    <ul>
-        <li>Query optimization using execution/explain plans</li>
-        <li>Index tuning (B-tree, Bitmap, Function-based)</li>
-        <li>PL/SQL code optimization</li>
-        <li>Using hints and optimizer techniques</li>
-    </ul>
-
-    <h2>Advanced Oracle Developer Skills</h2>
-    <ul>
-        <li>Working with JSON in Oracle</li>
-        <li>Using analytical functions (RANK, LAG, LEAD, OVER)</li>
-        <li>Pipelined functions</li>
-        <li>Working with LOB data types (CLOB, BLOB)</li>
-        <li>Advanced triggers (compound, system events)</li>
-        <li>Fine-grained access control (FGAC)</li>
-        <li>Row-level security & auditing</li>
+        <li>Data modeling and normalization</li>
+        <li>Database security and user management</li>
+        <li>Backup and recovery strategies</li>
+        <li>Version control (Git/GitHub)</li>
     </ul>
 
 </body>
