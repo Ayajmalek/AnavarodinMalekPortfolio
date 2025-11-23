@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2> <p style="text-align:center;background-color:DodgerBlue;">Anavarodin Malek Mahmadayaj's Portfolio</p></h2>
+
+<h4> 
+<div style="text-align:center;background-color:rgb(202, 111, 197);">
+<p>PROFILE / SUMMARY (Technology-Focused)</p>
+<p style="text-align:left;">
+Dynamic and detail-oriented IT professional with hands-on experience supporting enterprise environments, implementing cloud solutions, 
+and optimizing system performance. Strong foundation in Microsoft 365, Azure, Active Directory, and modern collaboration tools, with a 
+proven ability to troubleshoot complex technical issues and deliver secure, efficient, and scalable solutions. Adept at translating 
+business requirementsinto practical technical outcomes while maintaining high standards of reliability, documentation, and user 
+experience. Recognized for strong analytical skills, clear communication, and a commitment to continuous learning in emerging technologies.
+</p>
+</div>
+</h>
+<h4> <a href="https://ayajmalek.github.io/AnavarodinMalekPortfolio/main/AnavarodinResume.docx" target="_blank">
+    Download My Resume (Word Document)
+</a>
+</h4>
+<div style="background-color:rgb(60, 179, 113);" class="tab">
+
+  <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
+  <button class="tablinks" onclick="openCity(event, 'Skills')">Skills</button>
+  <button class="tablinks" onclick="openCity(event, 'Certifications')">Certifications</button>
+  <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openCity(event, 'Companies')">Companies</button>
+  <button class="tablinks" onclick="openCity(event, 'OS')">Operating Systems</button>
+  <button class="tablinks" onclick="openCity(event, 'Databases')">Databases</button>
+  <button class="tablinks" onclick="openCity(event, 'Softwares')">Softwares</button>
+  <button class="tablinks" onclick="openCity(event, 'Immigration')">Work Authorization</button>
+ 
+  
+</div>
+
+<img src="photo.png" width="200" height="300" style="float: right;" />
+<!--img src="photo.JPG" width="400" height="600" style="float: left;" /-->
+
+<div id="Education" class="tabcontent">
+  <h3>Education</h3>
+   
+  <li><a href="#">Master of Science in Chemistry from India (Degree Verified by WES in Canada)</a><br></li>
+  <li><a href="#">George Brown College: Cloud Computing Technology Continue</a><br></li>
+  <li><a href="#">Humber College : SQL Server & ASP.Net Bridging Program</a><br></li>
+  <li><a href="#">Information Technology, from India: Deploma in Database Management </a> <br></li>
+  <li><a href="#">Microsoft Certified Solution Developer from India </a><br></li>
+  
+</div>
+
+<div id="Skills" class="tabcontent">
+  <h3>Skills</h3>
+  <p>Oracle , SQL Server, ASP.Net, Java, Windows Server, Linux, Unix, C#, Oracle Forms, Oracle Reports, SSRS, SSIS</p>
+</div>
+
+<div id="Certifications" class="tabcontent">
+  <h3>Certifications</h3>
+  <li><a href="#">Oracle Certified Professional DBA</a><br></li>
+  <li><a href="#">Microsoft SQL Server Certification</a><br></li>
+  <li><a href="#">ASP.Net Certification</a><br></li>
+  <li><a href="#">Java Certification</a><br></li>
+  <li><a href="#">Microsoft Certified Solution Developer</a><br></li>
+  <li><a href="#">Brainbench Certification Visual Studio</a><br></li>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
+  <p> <li><a href="#">Parking Management System</a><br></li>
+      <li><a href="#">PDF Ticketing Management System</a><br></li>
+      <li><a href="#">Donor Management System Integration</a><br></li>
+      <li><a href="#">iWave Management System Integration</a><br></li>
+      <li><a href="#">Mobile Ticket Management Sytem</a><br></li>
+      <li><a href="#">Business Central Integration</a><br></li>
+      <li><a href="#">SSRS Reports for Finance, Marketing</a><br></li>
+  </p>
+</div>
+<div id="Companies" class="tabcontent">
+  <h3>Companies</h3>
+  
+  <p> <li> <a href="https://www.harbourfrontcentre.com">Harbourfront Centre</a> <br></li>
+      <li> <a href="https://www.gulfbank.com">Gulf Bank Kuwait</a> <br></li>
+      <li> <a href="https://www.newmowasat.com"> New Mowasat Hospital</a> <br></li>
+
+</div>
+
+<div id="OS" class="tabcontent">
+  <h3>Operating Systems</h3>
+  <p> 
+  
+    <ul>
+    <li><a href="#DOS">DOS</a></li>
+    <li><a href="#WINDOWS">Windows 10/11 Pro</a></li>
+    <li><a href="#Srv2019">Microsoft Windows Server 2019</a></li>
+    <li><a href="#LINUX">Linux</a></li>
+    <li><a href="#UNIX">Unix</a></li>
+    <li><a href="#MAC">Mac OS</a></li>
+    </ul>
+  </p>
+</div>
+
+<div id="Databases" class="tabcontent">
+  <h3>Databases</h3>
+  <p> <li>Oracle<br></li>
+      <li>SQL Server<br></li>
+      <li>MySQL<br></li>
+      <li>PostgreSQL<br></li>
+  </p>
+</div>
+
+<div id="Immigration" class="tabcontent">
+  <h3>Immigration</h3>
+  <p> <li>Canadian Citizen Since 2020</a> <br></li>
+      
+  </p>
+</div>
+
+<div id="Softwares" class="tabcontent">
+  <h3>Softwares</h3>
+  <p> <li><a href="https://www.tessituranetwork.com">CRM Tessitura</a> <br></li>
+      <li><a href="https://www.salesforce.com">Salesforce</a><br></li>
+      <li><a href="https://www.dayforcehcm.com"> Dayforce </a><br></li>
+      <li><a href="https://www.windcave.com">Windcave Formarly (Payment Express)</a><br></li>
+      <li><a href="https://www.avs.com">Address Verification System (AVS) Formarly Known as QAS</a> <br></li>
+      <li><a href="https://www.wordfly.com">WordFly (Email Managemt System)</a><br></li>
+  </p>
+</div>
+
+
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
+ 
+
+
