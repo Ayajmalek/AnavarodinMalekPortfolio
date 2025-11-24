@@ -98,7 +98,47 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 
 <div id="Education" class="tabcontent">
   <h6><strong>EDUCATION & ACKNOWLEDGEMENTS</strong>
-   
+  <style>
+    #edu-container {
+      display: flex;
+      gap: 5px;
+    }
+
+    /* Left-side List */
+    #cert-list li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      list-style-type: square;
+      font-size: 11px;
+    }
+    #cert-list li a {
+      text-decoration: none;
+      color: blue;
+    }
+    #cert-list li:hover a {
+      color: darkred;
+      font-weight: bold;
+    }
+
+    /* Right-side Viewport Box */
+    #cert-viewer {
+      width: 600px;
+      height: 350px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+    }
+
+    #cert-viewer img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none; /* Hidden until selected */
+    }
+  </style>
+<div id="edu-container">
   <li>
   <a href="#">George Brown College: Cloud Computing Technology Continue</a><br>
   <ul>
@@ -140,6 +180,7 @@ experience. Recognized for strong analytical skills, clear communication, and a 
   
 </h6>  
 </div>
+</div>
 
 <div id="Skills" class="tabcontent">
   <h3>Skills</h3>
@@ -166,7 +207,7 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 
 <h6>
 <div id="Certifications" class="tabcontent">
-  <h6>Certifications</h6>
+  <h6><strong>Certifications</strongs>
 
   <style>
     #cert-container {
@@ -268,7 +309,7 @@ experience. Recognized for strong analytical skills, clear communication, and a 
       });
     });
   </script>
-
+</h6>
 </div>
 </h6>
 
