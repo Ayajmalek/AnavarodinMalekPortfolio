@@ -132,31 +132,104 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 
 <div id="Certifications" class="tabcontent">
   <h3>Certifications</h3>
-<div>
-  <li><a href="#">Oracle Certified Professional</a>
-    <img src="Oracle.png" alt="Oracle Certificate" style="position: absolute; top: 350px; right: 300px; width: 400px; height: 300px;"><br>
-  </li>
-  
-  <li><a href="#">Microsoft SQL Server Certification</a>
-    <!--img src="photo.JPG" width="400" height="600" style="float: left;" /-->
-       <!--img src="sql.png" alt="" style="position: absolute; top: 350px; right: 300px; width: 400px; height: 300px;"-->
-  </li>
-  <li><a href="#">ASP.Net Certification</a>
-          <img src="dotnet.png" alt="ASP .Net Certification" style="position: absolute; top: 350px; right: 300px; width: 400px; height: 300px;"><br>
-  </li>
-  <li><a href="#">Java Certification</a>
-          <img src="java.png" alt="Java Certificate" style="position: absolute; top: 350px; right: 350px; width: 400px; height: 300px;"><br>
-  </li>
-  <li><a href="#">Microsoft Certified Solution Developer</a>
-           <img src="mcsd.png" alt="Microsoft Certified Solution Developer Certificate" style="position: absolute; top: 350px; right: 300px; width: 400px; height: 300px;"><br>
-  </li>
-  <li><a href="#">Brainbench Certification Visual Studio</a>
-        <img src="brainbench.png" alt="Brainbench Certificate" style="position: absolute; top: 350px; right: 350px; width: 400px; height: 300px;"><br>
-  </li>
-  <li><a href="#">Deploma In Database Management, India</a>
-        <!--img src="ddm.png" alt="Deploma in Database Management Certificate" style="position: absolute; top: 350px; right: 300px; width: 400px; height: 300px;"-->
-  </li>
+
+  <style>
+    #cert-container {
+      display: flex;
+      gap: 30px;
+    }
+
+    /* Left-side List */
+    #cert-list li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      list-style-type: square;
+      font-size: 18px;
+    }
+    #cert-list li a {
+      text-decoration: none;
+      color: blue;
+    }
+    #cert-list li:hover a {
+      color: darkred;
+      font-weight: bold;
+    }
+
+    /* Right-side Viewport Box */
+    #cert-viewer {
+      width: 420px;
+      height: 320px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #cert-viewer img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none; /* Hidden until selected */
+    }
+  </style>
+
+  <div id="cert-container">
+
+    <!-- LEFT LIST -->
+    <ul id="cert-list">
+      <li data-img="Oracle.png"><a href="#">Oracle Certified Professional</a></li>
+      <li data-img="sql.png"><a href="#">Microsoft SQL Server Certification</a></li>
+      <li data-img="dotnet.png"><a href="#">ASP.Net Certification</a></li>
+      <li data-img="java.png"><a href="#">Java Certification</a></li>
+      <li data-img="mcsd.png"><a href="#">Microsoft Certified Solution Developer</a></li>
+      <li data-img="brainbench.png"><a href="#">Brainbench Certification Visual Studio</a></li>
+      <li data-img=""><a href="#">Diploma in Database Management, India</a></li>
+    </ul>
+
+    <!-- RIGHT VIEWPORT -->
+    <div id="cert-viewer">
+      <img id="cert-image" src="" alt="Certification Preview">
+      <span id="no-image-text" style="color:gray;">Hover or click an item</span>
+    </div>
+  </div>
+
+  <script>
+    const listItems = document.querySelectorAll("#cert-list li");
+    const certImage = document.getElementById("cert-image");
+    const noImageText = document.getElementById("no-image-text");
+
+    listItems.forEach(item => {
+      const imgFile = item.getAttribute("data-img");
+
+      // Show image on hover
+      item.addEventListener("mouseover", () => {
+        if (imgFile) {
+          certImage.src = imgFile;
+          certImage.style.display = "block";
+          noImageText.style.display = "none";
+        } else {
+          certImage.style.display = "none";
+          noImageText.style.display = "block";
+        }
+      });
+
+      // Also support clicking
+      item.addEventListener("click", () => {
+        if (imgFile) {
+          certImage.src = imgFile;
+          certImage.style.display = "block";
+          noImageText.style.display = "none";
+        } else {
+          certImage.style.display = "none";
+          noImageText.style.display = "block";
+        }
+      });
+    });
+  </script>
+
 </div>
+
 
 <div id="Projects" class="tabcontent">
   <h3>Projects</h3>
