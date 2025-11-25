@@ -316,8 +316,49 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 
 <div id="Projects" class="tabcontent">
   <h6><strong>Projects (WORK SAMPLES SECTION)</strong>
-  <p> 
-<li>
+  <style>
+    #proj-container {
+      display: flex;
+      gap: 5px;
+    }
+
+    /* Left-side List */
+    #proj-list li {
+      margin-bottom: 10px;
+      cursor: pointer;
+      list-style-type: square;
+      font-size: 11px;
+    }
+    #proj-list li a {
+      text-decoration: none;
+      color: blue;
+    }
+    #proj-list li:hover a {
+      color: darkred;
+      font-weight: bold;
+    }
+
+    /* Right-side Viewport Box */
+    #proj-viewer {
+      width: 600px;
+      height: 350px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      background: #f0f8ff;
+      display: flex;
+      justify-content: right;
+      align-items: right;
+    }
+
+    #proj-viewer img {
+      max-width: 100%;
+      max-height: 100%;
+      display: none; /* Hidden until selected */
+    }
+  </style>
+<div id="proj-container">
+ <p> 
+ <li>
   <details>
     <summary><a href="#">Parking Management System</a></summary>
     <ul>
@@ -336,9 +377,9 @@ experience. Recognized for strong analytical skills, clear communication, and a 
     </ul>
 
   </details>
-</li>
+ </li>
 
-<li>
+  <li>
       <details>
         <summary><a href="#">PDF Ticketing Management System</a></summary>
         <ul>
@@ -350,19 +391,19 @@ experience. Recognized for strong analytical skills, clear communication, and a 
           <p><summary>Integrated with Email System and Scheduled to Send Ticket before Show</summary></p>
         </ul>
       </details>
-</li> 
+  </li> 
 
-<li>       
+  <li>       
   <details>
-  <summary><a href="#">Donor Management System Integration (Tessitura)</a></summary>
-  <ul>
-    <li>
+   <summary><a href="#">Donor Management System Integration (Tessitura)</a></summary>
+   <ul>
+     <li>
       Requirement Analysis
       <ul>
         <li>Meetings with fundraising and development teams</li>
         <li>Understanding donor workflows: pledges, campaigns, memberships</li>
       </ul>
-    </li>
+     </li>
 
     <li>
       Data Mapping & System Understanding
@@ -437,10 +478,10 @@ experience. Recognized for strong analytical skills, clear communication, and a 
       </ul>
     </li>
   </ul>
-</details>
-</li>
+  </details>
+ </li>
 
-<li>
+ <li>
   <details>
     <summary><a href="#">iWave Management System Integration</a></summary>
     <ul>
@@ -460,7 +501,7 @@ experience. Recognized for strong analytical skills, clear communication, and a 
   </details>
 </li>
 
-<li>
+ <li>
   <details>
     <summary><a href="#">Artifax Event Management System Integration</a></summary>
     <ul>
@@ -479,9 +520,9 @@ experience. Recognized for strong analytical skills, clear communication, and a 
       <p><summary>Post Go-Live Support & Enhancements</summary></p>
     </ul>
   </details>
-</li>
+ </li>
 
-<li>
+ <li>
   <details>
     <summary><a href="#">Mobile Ticket Management System (NSCAN) Integration with Tessitura</a></summary>
     <ul>
@@ -511,9 +552,9 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 
     </ul>
   </details>
-</li>
+ </li>
 
-<li>
+ <li>
   <a href="#">Business Central Integration with Tessitura</a><br>
   <details>
     <summary>View Details</summary>
@@ -562,23 +603,21 @@ experience. Recognized for strong analytical skills, clear communication, and a 
       <p><summary>Scheduled report delivery via email or shared folders</summary></p>
       <p><summary>Integration with department-specific data sources (Finance: accounting/ERP, Marketing: CRM/campaigns, Programming: project tracking)</summary>
       <p><summary>uals and charts for trends, KPIs, and performance monitoring</summary></p>
-
     </ul>
-
     <p><summary>Considerations:</summary></p>
-    <ul>
+     <ul>
       <p><summary>Ensure correct data mapping for each department</summary></p>
       <p><summary>Maintain data security and access permissions</summary></p>
       <p><summary>Design reports for clarity and usabipty</summary></p>
       <p><summary>Regularly update datasets and report templates as business needs change</summary></p>
 
-    </ul>
-  </h6>
+     </ul>
+   </h6>
   </details>
-</li>
-
-</p>
+ </li>
+ </p>
 </div>
+
 <div id="Companies" class="tabcontent">
   <h6>Companies</h6>
   
