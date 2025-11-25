@@ -609,10 +609,44 @@ experience. Recognized for strong analytical skills, clear communication, and a 
       <p><summary>Regularly update datasets and report templates as business needs change</summary></p>
 
      </ul>
-   </h5>
   </details>
  </li>
  </p>
+ </h5>
+ 
+    <script>
+      const listItems = document.querySelectorAll("#proj-list li");
+      const projImage = document.getElementById("proj-image");
+      const noImageText = document.getElementById("no-image-text");
+
+      listItems.forEach(item => {
+        const imgFile = item.getAttribute("data-img");
+
+        // Show image on hover
+        item.addEventListener("mouseover", () => {
+          if (imgFile) {
+            projImage.src = imgFile;
+            projImage.style.display = "block";
+            noImageText.style.display = "none";
+          } else {
+            projImage.style.display = "none";
+            noImageText.style.display = "block";
+          }
+        });
+
+        // Also support clicking
+        item.addEventListener("click", () => {
+          if (imgFile) {
+            projImage.src = imgFile;
+            projImage.style.display = "block";
+            noImageText.style.display = "none";
+          } else {
+            projImage.style.display = "none";
+            noImageText.style.display = "block";
+          }
+        });
+      });
+    </script>
 </div>
 
 <div id="Companies" class="tabcontent">
