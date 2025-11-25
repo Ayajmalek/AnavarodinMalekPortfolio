@@ -312,48 +312,12 @@ experience. Recognized for strong analytical skills, clear communication, and a 
 </div>
 
 <div id="Projects" class="tabcontent">
-  <h5><strong>Projects (WORK SAMPLES SECTION)</strong>
-  <style>
-    #proj-container {
-      display: flex;
-      gap: 5px;
-    }
-
-    /* Left-side List */
-    #proj-list li {
-      margin-bottom: 10px;
-      cursor: pointer;
-      list-style-type: square;
-      font-size: 11px;
-    }
-    #proj-list li a {
-      text-decoration: none;
-      color: blue;
-    }
-    #proj-list li:hover a {
-      color: darkred;
-      font-weight: bold;
-    }
-
-    /* Right-side Viewport Box */
-    #proj-viewer {
-      width: 600px;
-      height: 350px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      background: #f0f8ff;
-      display: flex;
-      justify-content: right;
-      align-items: right;
-    }
-
-    #proj-viewer img {
-      max-width: 100%;
-      max-height: 100%;
-      display: none; /* Hidden until selected */
-    }
-  </style>
-<div id="proj-container">
+  <h4 style="color: blue;"> <strong>Projects (WORK SAMPLES SECTION)</strong>
+ <style>
+  h5 {
+    color: blue;
+  }
+</style> 
  <p> 
  <li>
   <details>
@@ -612,41 +576,7 @@ experience. Recognized for strong analytical skills, clear communication, and a 
   </details>
  </li>
  </p>
- </h5>
- 
-    <script>
-      const listItems = document.querySelectorAll("#proj-list li");
-      const projImage = document.getElementById("proj-image");
-      const noImageText = document.getElementById("no-image-text");
-
-      listItems.forEach(item => {
-        const imgFile = item.getAttribute("data-img");
-
-        // Show image on hover
-        item.addEventListener("mouseover", () => {
-          if (imgFile) {
-            projImage.src = imgFile;
-            projImage.style.display = "block";
-            noImageText.style.display = "none";
-          } else {
-            projImage.style.display = "none";
-            noImageText.style.display = "block";
-          }
-        });
-
-        // Also support clicking
-        item.addEventListener("click", () => {
-          if (imgFile) {
-            projImage.src = imgFile;
-            projImage.style.display = "block";
-            noImageText.style.display = "none";
-          } else {
-            projImage.style.display = "none";
-            noImageText.style.display = "block";
-          }
-        });
-      });
-    </script>
+ </h4>
 </div>
 
 <div id="Companies" class="tabcontent">
