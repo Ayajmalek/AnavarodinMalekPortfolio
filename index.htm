@@ -205,114 +205,111 @@ experience. Recognized for strong analytical skills, clear communication, and a 
  
 </div>
 
-<h6>
-<div id="Certifications" class="tabcontent">
-  <h6><strong>Certifications</strongs>
+ <h6>
+  <div id="Certifications" class="tabcontent">
+    <h6><strong>Certifications</strongs>
+    <style>
+      #cert-container {
+        display: flex;
+        gap: 5px;
+      }
 
-  <style>
-    #cert-container {
-      display: flex;
-      gap: 5px;
-    }
+      /* Left-side List */
+      #cert-list li {
+        margin-bottom: 10px;
+        cursor: pointer;
+        list-style-type: square;
+        font-size: 11px;
+      }
+      #cert-list li a {
+        text-decoration: none;
+        color: blue;
+      }
+      #cert-list li:hover a {
+        color: darkred;
+        font-weight: bold;
+      }
 
-    /* Left-side List */
-    #cert-list li {
-      margin-bottom: 10px;
-      cursor: pointer;
-      list-style-type: square;
-      font-size: 11px;
-    }
-    #cert-list li a {
-      text-decoration: none;
-      color: blue;
-    }
-    #cert-list li:hover a {
-      color: darkred;
-      font-weight: bold;
-    }
+      /* Right-side Viewport Box */
+      #cert-viewer {
+        width: 600px;
+        height: 350px;
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        background: #f0f8ff;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+      }
 
-    /* Right-side Viewport Box */
-    #cert-viewer {
-      width: 600px;
-      height: 350px;
-      border: 2px solid #ccc;
-      border-radius: 10px;
-      background: #f0f8ff;
-      display: flex;
-      justify-content: right;
-      align-items: right;
-    }
+      #cert-viewer img {
+        max-width: 100%;
+        max-height: 100%;
+        display: none; /* Hidden until selected */
+      }
+    </style>
+    
+    <div id="cert-container">
 
-    #cert-viewer img {
-      max-width: 100%;
-      max-height: 100%;
-      display: none; /* Hidden until selected */
-    }
-  </style>
-  
-  <div id="cert-container">
+      <!-- LEFT LIST -->
+      <ul id="cert-list">
+        
+        <li data-img="ocpdba.png"><a href="#">Oracle Certified DBA</a></li>
+        <li data-img="Oracle.png"><a href="#">Oracle SQL Certified Professional</a></li>
+        <li data-img="aspnet.png"><a href="#">Humber College ASP.Net Certification</a></li>
+        <li data-img="dotnet.png"><a href="#">ASP.Net Certification</a></li>
+        <li data-img="java.png"><a href="#">Java Certification</a></li>
+        <li data-img="mcsd.png"><a href="#">Microsoft Certified Solution Developer</a></li>
+        <li data-img="brainbench.png"><a href="#">Brainbench Certification Visual Studio</a></li>
+        <li data-img="ddm.png"><a href="#">Diploma in Database Management, India</a></li>
+        <li data-img="wes.png"><a href="#">WES Certification</a></li>  
+        <li data-img="master.png"><a href="#">Master Degree</a></li>  
+        
+      </ul>
 
-    <!-- LEFT LIST -->
-    <ul id="cert-list">
-      
-      <li data-img="ocpdba.png"><a href="#">Oracle Certified DBA</a></li>
-      <li data-img="Oracle.png"><a href="#">Oracle SQL Certified Professional</a></li>
-       <li data-img="aspnet.png"><a href="#">Humber College ASP.Net Certification</a></li>
-      <li data-img="dotnet.png"><a href="#">ASP.Net Certification</a></li>
-      <li data-img="java.png"><a href="#">Java Certification</a></li>
-      <li data-img="mcsd.png"><a href="#">Microsoft Certified Solution Developer</a></li>
-      <li data-img="brainbench.png"><a href="#">Brainbench Certification Visual Studio</a></li>
-      <li data-img="ddm.png"><a href="#">Diploma in Database Management, India</a></li>
-      <li data-img="wes.png"><a href="#">WES Certification</a></li>  
-      <li data-img="master.png"><a href="#">Master Degree</a></li>  
-      
-    </ul>
-
-    <!-- RIGHT VIEWPORT -->
-    <div id="cert-viewer">
-      <img id="cert-image" src="" alt="Certification Preview">
-      <span id="no-image-text" style="color:gray;">Hover or click an item</span>
+      <!-- RIGHT VIEWPORT -->
+      <div id="cert-viewer">
+        <img id="cert-image" src="" alt="Certification Preview">
+        <span id="no-image-text" style="color:gray;">Hover or click an item</span>
     </div>
-  </div>
-  
+    </div>
+    
 
-  <script>
-    const listItems = document.querySelectorAll("#cert-list li");
-    const certImage = document.getElementById("cert-image");
-    const noImageText = document.getElementById("no-image-text");
+    <script>
+      const listItems = document.querySelectorAll("#cert-list li");
+      const certImage = document.getElementById("cert-image");
+      const noImageText = document.getElementById("no-image-text");
 
-    listItems.forEach(item => {
-      const imgFile = item.getAttribute("data-img");
+      listItems.forEach(item => {
+        const imgFile = item.getAttribute("data-img");
 
-      // Show image on hover
-      item.addEventListener("mouseover", () => {
-        if (imgFile) {
-          certImage.src = imgFile;
-          certImage.style.display = "block";
-          noImageText.style.display = "none";
-        } else {
-          certImage.style.display = "none";
-          noImageText.style.display = "block";
-        }
+        // Show image on hover
+        item.addEventListener("mouseover", () => {
+          if (imgFile) {
+            certImage.src = imgFile;
+            certImage.style.display = "block";
+            noImageText.style.display = "none";
+          } else {
+            certImage.style.display = "none";
+            noImageText.style.display = "block";
+          }
+        });
+
+        // Also support clicking
+        item.addEventListener("click", () => {
+          if (imgFile) {
+            certImage.src = imgFile;
+            certImage.style.display = "block";
+            noImageText.style.display = "none";
+          } else {
+            certImage.style.display = "none";
+            noImageText.style.display = "block";
+          }
+        });
       });
-
-      // Also support clicking
-      item.addEventListener("click", () => {
-        if (imgFile) {
-          certImage.src = imgFile;
-          certImage.style.display = "block";
-          noImageText.style.display = "none";
-        } else {
-          certImage.style.display = "none";
-          noImageText.style.display = "block";
-        }
-      });
-    });
-  </script>
-</h6>
+    </script>
+  </h6>
 </div>
-</h6>
-
 
 <div id="Projects" class="tabcontent">
   <h6><strong>Projects (WORK SAMPLES SECTION)</strong>
